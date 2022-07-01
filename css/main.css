@@ -181,6 +181,7 @@ section.full {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .middle {
@@ -311,7 +312,7 @@ body:not(.page-loader) {
     }
 }
 
-button {
+button.b {
     padding: 10px 20px;
     background-color: transparent;
     border: 1px solid var(--main);
@@ -334,12 +335,12 @@ button {
     background-position: -200px 0px;
 }
 
-button:hover {
+button.b:hover {
     transition: .7s ease;
     background-position: 100px 0px;
 }
 
-button:focus {
+button:focus, input[type=text]:focus {
     outline: none;
 }
 

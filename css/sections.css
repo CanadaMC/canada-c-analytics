@@ -1,9 +1,41 @@
 section#title {
     height: 200px;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 section#title h1 {
     color: var(--main)
+}
+
+section#data {
+    background-color: var(--main);
+    width: 100%;
+    padding-top: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+div.content {
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 600px) {
+    div.content {
+        width: 90%;
+    }
+    .donut {
+        padding: 0;
+    }
+}
+
+canvas {
+    position: relative;
+    width: 100%;
+}
+
+.donut {
+    padding: 50px;
 }
