@@ -45,12 +45,13 @@ div.player {
     height: 100px;
     overflow: hidden;
     border-radius: var(--search-rad);
-    filter: drop-shadow(0px 1px 3px #000);
+    filter: drop-shadow(0px 0px 1px #FFFFFF0F);
+    box-shadow: 0px 4px 8px #000;
     background-color: var(--main);
-    border: 1px solid var(--text);
+    border: 2px solid var(--highlight);
     cursor: pointer;
     transition: .1s ease;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 div.player .skull {
     float: left;
@@ -59,6 +60,7 @@ div.player .skull {
     padding-right: 20px;
 }
 div.player .username {
+    transition: .2s ease;
     color: var(--alt);
     padding: 0;
     margin: 0;
@@ -74,4 +76,8 @@ div.player:hover {
     transform: scale(1.1);
     transition: .1s ease;
     z-index: 10;
+}
+div.player:hover .username {
+    letter-spacing: 3px;
+    transition: .7s ease;
 }
