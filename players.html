@@ -14,94 +14,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="nofollow" />
 
-    <meta name="description" content="Otcopus Server Analytics">
+    <meta name="description" content="CanadaMC Server Analytics">
     <meta name="keywords"
-        content="Octopus is a high performance and feature rich Velocity fork. We feature built in AntiBot, player management and much more.">
-    <meta name="author" content="MattMX, ZeoNight">
+          content="CanadaMC is a high performance and feature rich Velocity fork. We feature built in AntiBot, player management and much more.">
+    <meta name="author" content="Pajama, fxcilities">
     <link rel="icon" href="./assets/icon.ico">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://octopusmc.org/">
-    <meta property="og:title" content="Octopus Server Analytics">
+    <meta property="og:url" content="https://canadamc.org/">
+    <meta property="og:title" content="CanadaMC Server Analytics">
     <meta property="og:description"
-        content="Octopus is a high performance and feature rich Velocity fork. We feature built in AntiBot, player management and much more.">
+          content="CanadaMC is a high performance and feature rich Velocity fork. We feature built in AntiBot, player management and much more.">
     <meta property="og:image" content="./assets/icon.ico">
     <meta name="theme-color" content="#8B3ACA">
 
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://octopusmc.org/">
-    <meta property="twitter:title" content="Octopus Server Analytics">
+    <meta property="twitter:url" content="https://canadamc.org/">
+    <meta property="twitter:title" content="CanadaMC Server Analytics">
     <meta property="twitter:description"
-        content="Octopus is a high performance and feature rich Velocity fork. We feature built in AntiBot, player management and much more.">
+          content="CanadaMC is a high performance and feature rich Velocity fork. We feature built in AntiBot, player management and much more.">
     <meta property="twitter:image" content="./assets/icon.ico">
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@0.7.3"></script>
 
-    <title>Players (octopus)</title>
+    <title>Players (CanadaMC)</title>
 </head>
 
 <body>
-    <div class='page-loader'></div>
-    <div class='page-loader'></div>
-    <div class="header" id="#header">
-        <a href="#" onclick="setPage('https://octopusmc.org/')" class="logo">
-            <img src="./assets/logo_white.png">
-            octopus
-        </a>
-        <a href="#">Impressions</a>
-        <a href="#" class="active">Players</a>
-        <a href="#" onclick="setPage('./index.html')">Activity</a>
-        <a href="javascript:void(0);" class="icon" onclick="topbar()">
-            <i class="fa fa-bars"></i>
-        </a>
+<div class='page-loader'></div>
+<div class='page-loader'></div>
+<div class="header" id="#header">
+    <a href="#" onclick="setPage('https://canadamc.org/')" class="logo">
+        <img src="./assets/logo_white.png">
+        CanadaMC
+    </a>
+    <a href="#">Impressions</a>
+    <a href="#" class="active">Players</a>
+    <a href="#" onclick="setPage('./index.html')">Activity</a>
+    <a href="javascript:void(0);" class="icon" onclick="topbar()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<section id="title">
+    <div class="center">
+        <h1 id="title-text">Players</h1>
     </div>
-    <section id="title">
-        <div class="center">
-            <h1 id="title-text">Players</h1>
+</section>
+<section id="data">
+    <div class="content">
+        <div class="middle">
+            <p>Search for data on players via username, UUID, region etc</p>
         </div>
-    </section>
-    <section id="data">
-        <div class="content">
-            <div class="middle">
-                <p>Search for data on players via username, UUID, region etc</p>
-            </div>
-            <div class="searchbar">
-                <input type="text" placeholder="Search by Username, UUID, IP, region.." id="user_in">
-                <button class="search" onclick="search()"><i class="fas fa-search"></i></button>
-            </div>
-            <hr>
-            <div id="results">
-                <div class="player">
-                    <img src="https://cravatar.eu/helmavatar/MattMX/190.png" class="skull">
-                    <div class="center">
-                        <h1 class="username">MattMX</h1>
-                        <p class="relevancy">Has logged on with the ip<b> 192.16.1.1</b></p>
-                    </div>
+        <div class="searchbar">
+            <input type="text" placeholder="Search by Username, UUID, IP, region.." id="user_in">
+            <button class="search" onclick="search()"><i class="fas fa-search"></i></button>
+        </div>
+        <hr>
+        <div id="results">
+            <div class="player">
+                <img src="https://cravatar.eu/helmavatar/Pajama/190.png" class="skull">
+                <div class="center">
+                    <h1 class="username">Pajama</h1>
+                    <p class="relevancy">Has logged on with the ip<b> 192.16.1.1</b></p>
                 </div>
-                <div class="player">
-                    <img src="https://cravatar.eu/helmavatar/MattMX/190.png" class="skull">
-                    <div class="center">
-                        <h1 class="username">MattMX</h1>
-                        <p class="relevancy">Has logged on with the ip<b> 192.16.1.1</b></p>
-                    </div>
+            </div>
+            <div class="player">
+                <img src="https://cravatar.eu/helmavatar/Pajama/190.png" class="skull">
+                <div class="center">
+                    <h1 class="username">Pajama</h1>
+                    <p class="relevancy">Has logged on with the ip<b> 192.16.1.1</b></p>
                 </div>
-                <div class="player">
-                    <img src="https://cravatar.eu/helmavatar/MattMX/190.png" class="skull">
-                    <div class="center">
-                        <h1 class="username">MattMX</h1>
-                        <p class="relevancy">Has logged on with the ip<b> 192.16.1.1</b></p>
-                    </div>
+            </div>
+            <div class="player">
+                <img src="https://cravatar.eu/helmavatar/Pajama/190.png" class="skull">
+                <div class="center">
+                    <h1 class="username">Pajama</h1>
+                    <p class="relevancy">Has logged on with the ip<b> 192.16.1.1</b></p>
                 </div>
             </div>
         </div>
-    </section>
-    <footer>
-        <p class="left">© octopus</p>
-        <p class="right">© MattMX</p>
-    </footer>
-    <script src="./js/search.js"></script>
+    </div>
+</section>
+<footer>
+    <p class="left">© CanadaMC</p>
+    <p class="right">© fxcilities</p>
+</footer>
+<script src="./js/search.js"></script>
 </body>
 
 </html>

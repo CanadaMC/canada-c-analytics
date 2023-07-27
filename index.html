@@ -13,84 +13,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="nofollow" />
 
-    <meta name="description" content="Otcopus Server Analytics">
+    <meta name="description" content="CanadaMC Server Analytics">
     <meta name="keywords"
-        content="Octopus is a high performance and feature rich Velocity fork. We feature built in AntiBot, player management and much more.">
-    <meta name="author" content="MattMX, ZeoNight">
+          content="CanadaMC is a high performance and feature rich Velocity fork. We feature built in AntiBot, player management and much more.">
+    <meta name="author" content="Pajama, fxcilities">
     <link rel="icon" href="./assets/icon.ico">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://canadamc.org/">
-    <meta property="og:title" content="Octopus Server Analytics">
+    <meta property="og:title" content="CanadaMC Server Analytics">
     <meta property="og:description"
-        content="Octopus is a high performance and feature rich Velocity fork. We feature built in AntiBot, player management and much more.">
+          content="CanadaMC is a high performance and feature rich Velocity fork. We feature built in AntiBot, player management and much more.">
     <meta property="og:image" content="./assets/icon.ico">
     <meta name="theme-color" content="#8B3ACA">
 
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://octopusmc.org/">
-    <meta property="twitter:title" content="Octopus Server Analytics">
+    <meta property="twitter:url" content="https://canadamc.org/">
+    <meta property="twitter:title" content="CanadaMC Server Analytics">
     <meta property="twitter:description"
-        content="Octopus is a high performance and feature rich Velocity fork. We feature built in AntiBot, player management and much more.">
+          content="CanadaMC is a high performance and feature rich Velocity fork. We feature built in AntiBot, player management and much more.">
     <meta property="twitter:image" content="./assets/icon.ico">
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@0.7.3"></script>
 
-    <title>Server Analytics (octopus)</title>
+    <title>Server Analytics (CanadaMC)</title>
 </head>
 
 <body>
-    <div class='page-loader'></div>
-    <div class='page-loader'></div>
-    <div class="header" id="#header">
-        <a href="#" onclick="setPage('https://octopusmc.org/')" class="logo">
-            <img src="./assets/logo_white.png">
-            octopus
-        </a>
-        <a href="#">Impressions</a>
-        <a href="#" onclick="setPage('./players.html')">Players</a>
-        <a href="#" class="active">Activity</a>
-        <a href="javascript:void(0);" class="icon" onclick="topbar()">
-            <i class="fa fa-bars"></i>
-        </a>
+<div class='page-loader'></div>
+<div class='page-loader'></div>
+<div class="header" id="#header">
+    <a href="#" onclick="setPage('https://canadamc.org/')" class="logo">
+        <img src="./assets/logo_white.png">
+        CanadaMC
+    </a>
+    <a href="#">Impressions</a>
+    <a href="#" onclick="setPage('./players.html')">Players</a>
+    <a href="#" class="active">Activity</a>
+    <a href="javascript:void(0);" class="icon" onclick="topbar()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<section id="title">
+    <div class="center">
+        <h1 id="title-text">Activity</h1>
     </div>
-    <section id="title">
-        <div class="center">
-            <h1 id="title-text">Activity</h1>
+</section>
+<section id="data">
+    <div class="content">
+        <h3>Player count</h3>
+        <hr>
+        <div>
+            <canvas id="chart_players"></canvas>
         </div>
-    </section>
-    <section id="data">
-        <div class="content">
-            <h3>Player count</h3>
-            <hr>
-            <div>
-                <canvas id="chart_players"></canvas>
-            </div>
+    </div>
+    <div class="content">
+        <h3>Connections per second</h3>
+        <hr>
+        <div>
+            <canvas id="chart_cps"></canvas>
         </div>
-        <div class="content">
-            <h3>Connections per second</h3>
-            <hr>
-            <div>
-                <canvas id="chart_cps"></canvas>
-            </div>
+    </div>
+    <div class="content">
+        <h3>Reach</h3>
+        <hr>
+        <div>
+            <canvas id="chart_countries" class="donut"></canvas>
         </div>
-        <div class="content">
-            <h3>Reach</h3>
-            <hr>
-            <div>
-                <canvas id="chart_countries" class="donut"></canvas>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <p class="left">© octopus</p>
-        <p class="right">© MattMX</p>
-    </footer>
-    <script src="./js/activity/cps.js"></script>
-    <script src="./js/activity/countries.js"></script>
-    <script src="./js/activity/players.js"></script>
+    </div>
+</section>
+<footer>
+    <p class="left">© CanadaMC</p>
+    <p class="right">© pajama </p>
+</footer>
+<script src="./js/activity/cps.js"></script>
+<script src="./js/activity/countries.js"></script>
+<script src="./js/activity/players.js"></script>
 </body>
 
 </html>
