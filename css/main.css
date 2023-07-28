@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
 :root {
-    --highlight: #8B3ACA;
+    --highlight: #742925;
     --main: #FFF;
     --text: rgb(37, 37, 37);
     --background: hwb(0 3% 97%);
-    --alt: #3A2A9E;
-    --alt1: #281852;
+    --alt: #742925;
+    --alt1: #431816;
     --grad-bg: linear-gradient(250deg, var(--highlight) 0%, var(--alt) 50%);
 }
 
